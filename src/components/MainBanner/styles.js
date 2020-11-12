@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
-  /* transform: scale() */
   .content {
     display: flex;
     justify-content: space-between;
@@ -25,6 +24,7 @@ export const Container = styled.div`
         line-height: 0;
       }
       button {
+        margin-top: 44px;
         outline: none;
         border: none;
         padding: 20px 30px;
