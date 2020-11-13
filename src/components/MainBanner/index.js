@@ -1,5 +1,6 @@
 import { Container } from "./styles";
 import Wrapper from "../Wrapper";
+import Button from "../../Button";
 
 export default function MainBanner({ children }) {
   return (
@@ -13,7 +14,7 @@ export default function MainBanner({ children }) {
               A web designer and developer from Southampton in the UK. I create
               bespoke websites to help people go further online.
             </p>
-            <button>Meu Portfolio</button>
+            <Button>Meu Portfolio</Button>
           </div>
           <div className="image-container">
             <img src="../../../images/perfil.jpg" alt="" />

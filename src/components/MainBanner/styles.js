@@ -23,19 +23,6 @@ export const Container = styled.div`
         font-size: 54px;
         line-height: 0;
       }
-      button {
-        margin-top: 44px;
-        outline: none;
-        border: none;
-        padding: 20px 30px;
-        border-radius: 45px;
-        cursor: pointer;
-        background-color: ${({ theme }) => theme.colors.second};
-        color: #fff;
-        font-weight: bold;
-        font-size: 20px;
-        width: 200px;
-      }
     }
     .image-container {
       background-color: ${({ theme }) => theme.colors.cornFlower};
