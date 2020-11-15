@@ -28,23 +28,26 @@ export const Container = styled.footer`
   & > div {
     padding: 70px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     .contact {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       h2 {
-        line-height: 0;
+        padding-top: 10px;
         color: #fff;
         font-size: 44px;
+        line-height: 0;
       }
       & > p {
         color: #ddd;
         font-size: 24px;
-        line-height: 1.3;
-        padding: 16px 0;
       }
       button {
         width: 240px;
-        margin-top: 0;
+        margin: 0;
       }
     }
     ul {

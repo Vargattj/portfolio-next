@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import Wrapper from "../Wrapper";
-import Button from "../../Button";
+import Button from "../../components/Button";
 
 export default function MainBanner({ children }) {
   return (

@@ -1,10 +1,10 @@
-import Wrapper from "../components/Wrapper";
-import Nav from "../components/nav";
 import Banner from "../components/Banner";
-import ServiceItem from "../components/ServiceItem";
+import Nav from "../components/nav";
+import { SkillList } from "../components/SkillList";
+import Wrapper from "../components/Wrapper";
 import { Footer } from "../components/Footer";
 
-export default function Services() {
+export default function Skills() {
   const text = "Everything I offer with a detailed overview of each. ";
   const title = "My Services";
 
@@ -15,9 +15,7 @@ export default function Services() {
           <Nav />
         </Wrapper>
       </Banner>
-      <Wrapper>
-        <ServiceItem />
-      </Wrapper>
+      <SkillList />
       <Footer />
     </>
   );

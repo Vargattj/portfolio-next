@@ -13,10 +13,11 @@ export const Container = styled.div`
       max-width: 600px;
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
+
       p {
         color: #ddd;
         font-size: 36px;
-        /* padding: 20px 0; */
         line-height: 1.3;
       }
       h1 {
@@ -25,7 +26,7 @@ export const Container = styled.div`
       }
     }
     .image-container {
-      background-color: ${({ theme }) => theme.colors.cornFlower};
+      background-color: ${({ theme }) => theme.colors.third};
       width: 400px;
       height: 500px;
       display: block;
