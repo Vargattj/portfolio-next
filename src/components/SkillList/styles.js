@@ -7,13 +7,14 @@ export const Container = styled.main`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1050px;
+    width: 1050px;
     li {
+      box-sizing: border-box;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 8px;
-      box-sizing: border-box;
       padding: 20px;
       margin-right: 20px;
       margin-bottom: 20px;

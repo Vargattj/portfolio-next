@@ -2,6 +2,7 @@ import { MdClose } from "react-icons/md";
 import styled from "styled-components";
 
 export const Background = styled.div`
+  z-index: 1000;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -12,33 +13,75 @@ export const Background = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 800px;
-  height: 500px;
+  width: 1050px;
+  height: 550px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #000;
+  background: #16213e;
   color: #000;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 10;
   border-radius: 10px;
+  overflow-y: scroll;
 `;
 
 export const ModalContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.8;
-  color: #141414;
-  p {
-    margin-bottom: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  h1 {
+    margin: 16px 0;
+    color: #ddd;
+    font-size: 36px;
+    margin-top: 16px;
+    font-weight: bold;
   }
-  button {
-    padding: 10px 24px;
-    background: #141414;
-    color: #fff;
-    border: none;
+  .slider {
+    margin-bottom: 36px;
+  }
+    div {
+      img {
+        max-width: 800px;
+      }
+    }
+  }
+  div {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      line-height: 1;
+      color: #ddd;
+      font-size: 36px;
+      margin-top: 16px;
+      font-weight: bold;
+      &::after {
+        margin: 16px 0;
+        content: "";
+        width: 364px;
+        height: 0.5px;
+        background-color: #bbb;
+        display: block;
+      }
+      span {
+        margin-top: 8px;
+        color: #bbb;
+        font-weight: normal;
+        display: block;
+        font-size: 24px;
+      }
+    }
+    p {
+      color: #bbb;
+      font-size: 24px;
+    }
+    li {
+      font-size: 24px;
+      color: #bbb;
+      list-style: circle;
+      text-align: left;
+      margin: 5px 0;
+      margin-left: 20px;
+    }
   }
 `;
 
