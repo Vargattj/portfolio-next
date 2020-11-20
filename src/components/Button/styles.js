@@ -11,4 +11,11 @@ export const Container = styled.button`
   font-weight: bold;
   font-size: 20px;
   width: 200px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    color: #ff4560;
+    background-color: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.second};
+  }
 `;

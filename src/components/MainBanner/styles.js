@@ -1,6 +1,31 @@
 import styled from "styled-components";
 
+export const Separator = styled.section`
+  .custom-shape-divider-bottom-1605195288 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1605195288 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotateX(180deg);
+  }
+
+  .custom-shape-divider-bottom-1605195288 .shape-fill {
+    fill: #ffffff;
+  }
+`;
+
 export const Container = styled.div`
+  position: relative;
   background-color: ${({ theme }) => theme.colors.primary};
   .content {
     display: flex;
@@ -13,7 +38,9 @@ export const Container = styled.div`
       max-width: 600px;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      max-height: 550px;
+      margin-bottom: 40px;
 
       p {
         color: #ddd;
@@ -33,7 +60,7 @@ export const Container = styled.div`
       position: relative;
       border-radius: 8px;
       text-align: center;
-      top: -60px;
+      top: -40px;
       img {
         top: 30px;
         left: 50%;
@@ -44,7 +71,5 @@ export const Container = styled.div`
         max-height: 500px;
       }
     }
-  }
-  &::after {
   }
 `;

@@ -5,8 +5,9 @@ import Wrapper from "../components/Wrapper";
 import { Footer } from "../components/Footer";
 
 export default function Skills() {
-  const text = "Everything I offer with a detailed overview of each. ";
-  const title = "My Services";
+  const title = "Minhas Skills ";
+  const text =
+    "Todas as linguagens, frameworks e bibliotecas que eu domino e utlizo no meu dia a dia de desenvolvedor";
 
   return (
     <>

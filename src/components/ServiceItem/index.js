@@ -5,37 +5,38 @@ export default function ServiceItem() {
     <Container>
       <article>
         <div>
-          <span>O que fazemos</span>
-          <h2>Website design & development</h2>
+          <span>O que eu faço</span>
+          <h2>Desenvolvimento Web</h2>
           <p>
-            Strong performing websites that compliment your brand and visually
-            impress your customers.
+            No processo de desenvolvimento Web, busco criar sites altamente
+            performáticos e responsivos, além de garantir que sejam simples e
+            práticos para seu público.
           </p>
-          <a href="">Entre em contato</a>
+          <a href="">Entrar em contato</a>
         </div>
         <img src="../../images/web-dev.svg" alt="" />
       </article>
       <article className="right">
         <div>
-          <span>O que fazemos</span>
-          <h2>Mobile development</h2>
+          <span>O que eu faço</span>
+          <h2>Desenvolvimento Mobile</h2>
           <p>
-            Strong performing websites that compliment your brand and visually
-            impress your customers.
+            Utilizando React Native construo aplicações nativas para IOS e
+            Android.
           </p>
-          <a href="">Entre em contato</a>
+          <a href="">Entrar em contato</a>
         </div>
         <img src="../../images/mobile-dev.svg" alt="" />
       </article>
       <article>
         <div>
-          <span>O que fazemos</span>
-          <h2>Seo Otimization</h2>
+          <span>O que eu faço</span>
+          <h2>SEO</h2>
           <p>
-            Strong performing websites that compliment your brand and visually
-            impress your customers.
+            SEO é um conjunto de técnicas que visa posicionar uma página nos
+            primeiros resultados de mecanismos de busca online, como o Google.
           </p>
-          <a href="">Entre em contato</a>
+          <a href="">Entrar em contato</a>
         </div>
         <img src="../../images/seo.svg" alt="" />
       </article>

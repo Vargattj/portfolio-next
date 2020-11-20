@@ -9,8 +9,14 @@ export const Container = styled.main`
     flex-wrap: wrap;
     width: 1050px;
     li {
+      img {
+        width: 200px;
+        height: 190px;
+        /* border: 1px solid #aaa; */
+        /* border-radius: 50%; */
+        padding: 16px;
+      }
       box-sizing: border-box;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,34 +38,17 @@ export const Container = styled.main`
         line-height: 0;
         margin-top: 25px;
         margin-bottom: 0;
+        font-weight: bold;
+        font-size: 24px;
       }
       p {
         color: #222;
+        line-height: 1.3;
         text-align: center;
         margin: 25px 0;
+        font-size: 18px;
       }
-      button {
-        position: relative;
-        border: none;
-        padding: 15px 20px;
-        width: 180px;
-        background-color: ${({ theme }) => theme.colors.third};
-        border-radius: 10px;
-        color: #fff;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        font-size: 12px;
 
-        i {
-          color: ${({ theme }) => theme.colors.second};
-          position: absolute;
-          right: 8px;
-          top: 50%;
-          width: 8px;
-          margin-top: -7px;
-        }
-      }
       &:last-child {
         margin-right: auto;
         justify-self: center;

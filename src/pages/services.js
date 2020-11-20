@@ -5,8 +5,8 @@ import ServiceItem from "../components/ServiceItem";
 import { Footer } from "../components/Footer";
 
 export default function Services() {
-  const text = "Everything I offer with a detailed overview of each. ";
-  const title = "My Services";
+  const text = "Conheça os principais serviços que eu ofereço";
+  const title = "Meus Serviços";
 
   return (
     <>
