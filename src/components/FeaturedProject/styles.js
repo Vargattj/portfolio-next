@@ -5,24 +5,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  /* &::before {
-    border-radius: 8px;
-    position: absolute;
-    top: -20px;
-    left: -40px;
-    content: "";
-    background-color: #f5f5f5;
-    width: 730px;
-    height: 550px;
-    display: block;
-  } */
+
   img {
     -webkit-box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
     -moz-box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
     box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
     z-index: 10;
     width: 650px;
-    /* height: 550px; */
   }
 
   .project-details {

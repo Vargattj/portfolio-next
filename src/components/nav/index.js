@@ -26,8 +26,16 @@ export default function Nav() {
               <a>Serviços</a>
             </Link>
           </li>
-          <li>Sobre</li>
-          <li>Contato</li>
+          <li>
+            <Link href="/sobre">
+              <a>Sobre</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contato">
+              <a>Contato</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </Container>

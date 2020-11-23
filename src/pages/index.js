@@ -3,6 +3,7 @@ import Nav from "../components/nav";
 import MainBanner from "../components/MainBanner";
 import { FeaturedProject } from "../components/FeaturedProject";
 import { SkillMain } from "../components/SkillMain";
+import { Footer } from "../components/Footer";
 
 import styled from "styled-components";
 import Button from "../components/Button";
@@ -80,6 +81,7 @@ export default function Home() {
       </Wrapper>
       <MainPageServices />
       <SkillMain />
+      <Footer />
     </>
   );
 }

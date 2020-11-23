@@ -38,7 +38,7 @@ export const Container = styled.div`
       max-width: 600px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       max-height: 550px;
       margin-bottom: 40px;
 

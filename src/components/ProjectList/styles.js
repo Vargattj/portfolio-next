@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.ul`
   margin: 0 auto;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,16 +12,19 @@ export const Container = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 8px;
     margin-right: 20px;
     margin-bottom: 20px;
     list-style: none;
     max-width: 550px;
+    cursor: pointer;
+
     &:last-child {
       margin-right: auto;
       justify-self: center;
     }
     a {
+      height: 300px;
+
       .bar {
         height: 15px;
         width: 100%;
@@ -62,24 +66,34 @@ export const Container = styled.ul`
         }
       }
       .main {
-        /* position: relative; */
-        /* &:hover {
-          &::before {
-            opacity: 0.5;
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            z-index: 20;
-            background-color: #241245;
-            top: 0;
-            transition: 2s;
-          } */
+        z-index: 10;
+        height: 0;
+        background: url("../../../images/fogo-e-lenha-cardapio.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        transition: all 0.5s;
+
+        &::before {
+          position: absolute;
+          opacity: 0.6;
+          width: 100%;
+          height: 100%;
+          content: "";
+          display: block;
+          background-color: #222;
+        }
+        &:hover {
+          height: 300px;
+          img {
+            opacity: 0;
+          }
+        }
+        img {
+          max-width: 500px;
+          height: 300px;
+        }
       }
     }
-    img {
-      max-width: 100%;
-    }
-    cursor: pointer;
   }
 `;
