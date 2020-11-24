@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+  .active {
+    &::after {
+      width: 30px;
+      border-radius: 50px;
+    }
+  }
+
   nav {
     height: 100px;
     display: flex;
@@ -8,6 +15,8 @@ export const Container = styled.header`
     justify-content: space-between;
 
     h2 {
+      padding: 10px 0;
+
       a {
         color: #fff;
         font-size: 26px;
@@ -25,6 +34,12 @@ export const Container = styled.header`
           background-color: ${({ theme }) => theme.colors.second};
           border-radius: 50px;
           margin-top: 8px;
+          transition: width 0.2s;
+        }
+        &:hover {
+          &::after {
+            width: 30px;
+          }
         }
       }
     }
@@ -32,14 +47,44 @@ export const Container = styled.header`
       display: flex;
       list-style: none;
 
-      li,
+      li {
+        padding: 10px 0;
+        &::after {
+          content: "";
+          display: block;
+          width: 0px;
+          height: 6px;
+          background-color: ${({ theme }) => theme.colors.second};
+          transition: width 0.3s;
+          margin: 0 auto;
+          margin-top: 8px;
+          border-radius: 50px;
+        }
+        &:hover {
+          a {
+            color: #fff;
+            transition: color 0.1s;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 6px;
+            background-color: ${({ theme }) => theme.colors.second};
+            border-radius: 50px;
+            margin: 0 auto;
+            margin-top: 8px;
+            transform: scaleX(50%);
+          }
+        }
+        & + li {
+          margin-left: 30px;
+        }
+      }
       a {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.textSecond};
         font-size: 24px;
-        & + li {
-          margin-left: 30px;
-        }
       }
     }
   }

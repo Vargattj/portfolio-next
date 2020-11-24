@@ -9,6 +9,11 @@ export const Container = styled.main`
     flex-wrap: wrap;
     width: 1050px;
     li {
+      transition: transform 0.35s ease-in-out;
+      &:hover {
+        transform: rotateX(7deg) translateY(-6px) scale(1.05);
+      }
+
       img {
         width: 200px;
         height: 190px;

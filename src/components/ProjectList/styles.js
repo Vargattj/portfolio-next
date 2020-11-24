@@ -15,16 +15,15 @@ export const Container = styled.ul`
     margin-right: 20px;
     margin-bottom: 20px;
     list-style: none;
-    max-width: 550px;
+    max-width: 540px;
     cursor: pointer;
 
     &:last-child {
       margin-right: auto;
       justify-self: center;
     }
-    a {
-      height: 300px;
 
+    .main {
       .bar {
         height: 15px;
         width: 100%;
@@ -65,34 +64,83 @@ export const Container = styled.ul`
           }
         }
       }
-      .main {
-        z-index: 10;
-        height: 0;
-        background: url("../../../images/fogo-e-lenha-cardapio.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        transition: all 0.5s;
+      transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      overflow: hidden;
+      position: relative;
+      &:hover {
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        /* box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); */
+        transform: scale(0.97);
+        .descriptions {
+          left: 0px;
+          transition: all 0.7s ease-in-out;
+          clip-path: circle(75%);
 
-        &::before {
-          position: absolute;
-          opacity: 0.6;
-          width: 100%;
-          height: 100%;
-          content: "";
-          display: block;
-          background-color: #222;
-        }
-        &:hover {
-          height: 300px;
-          img {
-            opacity: 0;
+          ul {
+            transform: translateX(0px);
+          }
+          button {
+            transform: translateY(-45px);
           }
         }
+
         img {
-          max-width: 500px;
-          height: 300px;
+          transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+          transform: scale(1.6) rotate(20deg);
+          filter: blur(3px);
         }
+      }
+      img {
+        max-width: 500px;
+        height: 300px;
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      }
+      .descriptions {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(150, 150, 150, 0.7);
+        background-color: rgba(225, 225, 225, 0.7);
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s ease-in-out;
+        padding: 20px;
+        box-sizing: border-box;
+        clip-path: circle(0% at 100% 100%);
+      }
+      ul {
+        transform: translateX(-70px);
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        transition: all, 0.7s ease-in-out;
+        li {
+          display: inline-block;
+          background-color: #333;
+          width: fit-content;
+          font-size: 12px;
+          font-weight: bold;
+          color: #ddd;
+          padding: 11px;
+        }
+      }
+      button {
+        transition: all 0.7s ease-in-out;
+        margin: auto;
+        border: 0;
+        color: ${({ theme }) => theme.colors.third};
+        background-color: ${({ theme }) => theme.colors.third};
+        padding: 10px 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        transform: translateY(0px);
+        color: #ddd;
       }
     }
   }
