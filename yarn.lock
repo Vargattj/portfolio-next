@@ -4294,6 +4294,11 @@ react-dom@^16.8.0:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
+react-driftjs@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/react-driftjs/-/react-driftjs-1.1.11.tgz#f6b6e814cbec29bd478e28f9695cb0ca3685d2d5"
+  integrity sha512-KBKWlMFmgjKiq6icyNPVh6usij+TSWCPCdLwAhs1sd87tvV12DHjbAlGVDLftS2NCjEajEArQBUicMqJqkI9Yw==
+
 react-icons@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"

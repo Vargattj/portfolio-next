@@ -21,6 +21,7 @@ export const Separator = styled.div`
     fill: #fff;
   }
 `;
+
 export const Container = styled.footer`
   background-color: ${({ theme }) => theme.colors.primary};
   position: relative;
@@ -39,7 +40,6 @@ export const Container = styled.footer`
         padding-top: 10px;
         color: #fff;
         font-size: 44px;
-        line-height: 0;
       }
       & > p {
         color: #ddd;
@@ -72,5 +72,34 @@ export const Container = styled.footer`
     background-color: #1a1a2e;
     text-align: center;
     color: #aaa;
+  }
+
+  @media only screen and (max-width: 768px) {
+    & > div {
+      flex-direction: column;
+      ul {
+        li {
+          margin: 0;
+        }
+      }
+      .contact {
+        padding: 10px;
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        height: 200px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        button {
+          align-self: center;
+          width: 100%;
+          padding: 15px 15px;
+        }
+      }
+    }
   }
 `;

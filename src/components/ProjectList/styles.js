@@ -20,7 +20,6 @@ export const Container = styled.ul`
 
     &:last-child {
       margin-right: auto;
-      justify-self: center;
     }
 
     .main {
@@ -69,7 +68,6 @@ export const Container = styled.ul`
       position: relative;
       &:hover {
         transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-        /* box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3); */
         transform: scale(0.97);
         .descriptions {
           left: 0px;
@@ -99,8 +97,7 @@ export const Container = styled.ul`
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: rgba(150, 150, 150, 0.7);
-        background-color: rgba(225, 225, 225, 0.7);
+        background-color: rgba(80, 80, 80, 0.7);
         width: 100%;
         height: 100%;
         transition: all 0.7s ease-in-out;
@@ -109,18 +106,19 @@ export const Container = styled.ul`
         clip-path: circle(0% at 100% 100%);
       }
       ul {
-        transform: translateX(-70px);
-        max-width: 300px;
-        margin: 0 auto;
         display: flex;
-        align-items: center;
-        flex: 1;
+        max-width: 300px;
+        transform: translateX(-70px);
+        margin: 0 auto;
         height: 100%;
         transition: all, 0.7s ease-in-out;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
         li {
+          margin-top: 10px;
           display: inline-block;
           background-color: #333;
-          width: fit-content;
           font-size: 12px;
           font-weight: bold;
           color: #ddd;
@@ -141,6 +139,28 @@ export const Container = styled.ul`
         font-weight: bold;
         transform: translateY(0px);
         color: #ddd;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    width: 100%;
+
+    li {
+      margin: 0 auto;
+      a {
+        margin-top: 20px;
+        max-width: 340px;
+        &:last-child {
+          margin: center;
+        }
+        .main {
+          img {
+            width: 100%;
+            height: 200px;
+            border-radius: 0 0 10px 10px;
+          }
+        }
       }
     }
   }

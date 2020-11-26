@@ -15,8 +15,6 @@ export const Container = styled.header`
     justify-content: space-between;
 
     h2 {
-      padding: 10px 0;
-
       a {
         color: #fff;
         font-size: 26px;
@@ -25,21 +23,21 @@ export const Container = styled.header`
         letter-spacing: 2px;
         padding-top: 8px;
         text-decoration: none;
-
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 8px;
+        background-color: ${({ theme }) => theme.colors.second};
+        border-radius: 50px;
+        margin-top: 8px;
+        transition: width 0.2s;
+        cursor: unset;
+      }
+      &:hover {
         &::after {
-          content: "";
-          display: block;
-          width: 50px;
-          height: 8px;
-          background-color: ${({ theme }) => theme.colors.second};
-          border-radius: 50px;
-          margin-top: 8px;
-          transition: width 0.2s;
-        }
-        &:hover {
-          &::after {
-            width: 30px;
-          }
+          width: 30px;
         }
       }
     }

@@ -48,7 +48,6 @@ export const Container = styled.div`
       }
       h1 {
         font-size: 64px;
-        line-height: 0;
       }
     }
   }

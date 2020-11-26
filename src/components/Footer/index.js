@@ -23,7 +23,7 @@ export function Footer() {
         </Separator>
         <Wrapper>
           <div className="contact">
-            <h2>Vamos trabalhar juntos</h2>
+            <h2>Vamos trabalhar juntos!</h2>
             <p>Gostaria de conversar sobre algum projeto?</p>
             <Button>Entrar em contato</Button>
           </div>

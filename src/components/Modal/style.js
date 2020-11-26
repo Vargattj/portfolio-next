@@ -10,19 +10,29 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const ModalWrapper = styled.div`
-  width: 1050px;
+  width: 100%;
   height: 550px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #16213e;
   color: #000;
-  display: grid;
   position: relative;
   z-index: 10;
   border-radius: 10px;
-  overflow-y: scroll;
+  display: flex;
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+    width: 100%;
+    height: 80vh;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -38,13 +48,14 @@ export const ModalContent = styled.div`
   .slider {
     margin-bottom: 36px;
   }
-    div {
-      img {
-        max-width: 800px;
-      }
+  div {
+    width: 100%;
+    img {
+      width: 100%;
     }
   }
-  div {
+
+  .description {
     line-height: 1.4;
     display: flex;
     flex-direction: column;
@@ -83,15 +94,27 @@ export const ModalContent = styled.div`
       margin-left: 20px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+
+    .description {
+      max-width: 300px;
+      /* width: 100%; */
+    }
+  }
 `;
 
 export const CloseModalButton = styled(MdClose)`
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 20px;
-  right: 20px;
+  right: 40px;
   width: 32px;
   height: 32px;
   padding: 0;
   z-index: 10;
+  color: #ddd;
 `;

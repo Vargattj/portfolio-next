@@ -63,7 +63,7 @@ export default function Modal({ showModal, setShowModal }) {
                       );
                     })}
                   </AwesomeSlider>
-                  <div>
+                  <div className="description">
                     <h2>Sobre esse projeto</h2>
                     <p>{filterProjects[0].details.about}</p>
                     <br />

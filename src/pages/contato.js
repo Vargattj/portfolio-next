@@ -2,6 +2,7 @@ import Wrapper from "../components/Wrapper";
 import Nav from "../components/nav";
 import Banner from "../components/Banner";
 import Button from "../components/Button";
+import Drift from "react-driftjs";
 
 import styled from "styled-components";
 
@@ -42,11 +43,10 @@ const ContactArea = styled.section`
   }
 `;
 
+const title = "Entre em contato";
+const text =
+  "Ficarei feliz em ouvir o que tem a dizer e responderei o mais rápido possível";
 export default function Contato() {
-  const title = "Entre em contato";
-  const text =
-    "Ficarei feliz em ouvir o que tem a dizer e responderei o mais rápido possível";
-
   return (
     <div>
       <Banner title={title} text={text}>
@@ -55,7 +55,10 @@ export default function Contato() {
         </Wrapper>
       </Banner>
       <ContactArea>
-        <form>
+        <form
+          action="https://getform.io/f/0d2cb561-6194-4c40-b745-bc98255d082a"
+          method="POST"
+        >
           <h2>Mandar mensagem</h2>
           <input type="text" placeholder="Nome" name="name" />
           <input type="email" placeholder="Email" name="email" />
@@ -69,6 +72,7 @@ export default function Contato() {
         </form>
         <img src="../../../images/new_message.svg" alt="" />
       </ContactArea>
+      {/* <Drift appId="sfmpvtyt3e64" /> */}
     </div>
   );
 }
