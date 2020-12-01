@@ -17,8 +17,6 @@ export const Container = styled.main`
       img {
         width: 200px;
         height: 190px;
-        /* border: 1px solid #aaa; */
-        /* border-radius: 50%; */
         padding: 16px;
       }
       box-sizing: border-box;
@@ -57,6 +55,25 @@ export const Container = styled.main`
       &:last-child {
         margin-right: auto;
         justify-self: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 1050px) {
+    .skill-list {
+      width: 840px;
+      li {
+        width: 400px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .skill-list {
+      width: 90%;
+      li {
+        margin: 20px auto;
+        width: 500px;
       }
     }
   }
