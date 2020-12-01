@@ -27,7 +27,8 @@ export const Container = styled.footer`
   position: relative;
   margin-top: 60px;
   & > div {
-    padding: 70px 0;
+    padding: 40px 0;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +43,7 @@ export const Container = styled.footer`
         font-size: 44px;
       }
       & > p {
+        margin-left: 5px;
         color: #ddd;
         font-size: 24px;
       }
@@ -56,17 +58,31 @@ export const Container = styled.footer`
       margin: 0 auto;
       li {
         margin: 25px 0;
+        display: flex;
+        align-items: center;
+        svg {
+          height: 20px;
+          width: 20px;
+          color: #e94560;
+          margin-right: 7px;
+        }
         a {
-          font-size: 20px;
+          font-size: 18px;
           text-transform: uppercase;
           color: #ddd;
+
+          font-weight: bold;
           text-decoration: none;
+        }
+        &:hover {
+          a {
+            color: #fff;
+          }
         }
       }
     }
   }
   p:last-child {
-    /* border-top: 1px solid #ddd; */
     margin: auto 0;
     padding: 25px 0;
     background-color: #1a1a2e;
@@ -76,6 +92,7 @@ export const Container = styled.footer`
 
   @media only screen and (max-width: 768px) {
     & > div {
+      padding: 20px 0;
       flex-direction: column;
       ul {
         li {
@@ -92,14 +109,22 @@ export const Container = styled.footer`
           margin: 20px 0;
         }
         height: 200px;
-        justify-content: space-between;
-        margin-bottom: 50px;
         button {
           align-self: center;
-          width: 100%;
           padding: 15px 15px;
         }
       }
+      ul {
+        text-align: start;
+        margin: 40px 0;
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .custom-shape-divider-top-1605273349 svg {
+      height: 0px;
     }
   }
 `;

@@ -10,7 +10,6 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   @media only screen and (max-width: 768px) {
     width: 100%;
     align-items: center;
@@ -18,7 +17,7 @@ export const Background = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 100%;
+  width: 1050px;
   height: 550px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #16213e;
@@ -26,8 +25,8 @@ export const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
-  display: flex;
-
+  display: grid;
+  overflow-y: scroll;
   @media only screen and (max-width: 768px) {
     padding: 10px;
     width: 100%;
@@ -98,11 +97,11 @@ export const ModalContent = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
+    overflow: hidden;
     overflow-y: scroll;
 
     .description {
       max-width: 300px;
-      /* width: 100%; */
     }
   }
 `;

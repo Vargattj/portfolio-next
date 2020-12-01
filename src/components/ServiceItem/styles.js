@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 60px;
   article {
     & + article {
       margin-top: 200px;
@@ -68,6 +67,38 @@ export const Container = styled.section`
     }
     img {
       order: 1;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    article {
+      & + article {
+        margin-top: 80px;
+      }
+      flex-direction: column;
+      div {
+        margin-top: 60px;
+        height: auto;
+        h2 {
+          font-size: 25px;
+          line-height: 1.6;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    article.right {
+      img {
+        order: 0;
+      }
     }
   }
 `;

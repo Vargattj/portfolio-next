@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { Container } from "./styles";
+import { Container, MobileNav } from "./styles";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function Nav() {
   const router = useRouter();
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [currentPage, setCurrentPage] = useState("");
 
   function useMedia(media) {
     const [match, setMatch] = useState(null);
 
     useEffect(() => {
+      setCurrentPage(router.pathname);
       function changeMatch() {
         const { matches } = window.matchMedia(media);
         setMatch(matches);
@@ -21,14 +23,49 @@ export default function Nav() {
         window.removeEventListener("resize", changeMatch);
       };
     }, [media]);
-    // return match;
+    return match;
   }
 
   const mobile = useMedia("(max-width: 768px");
+
   return (
     <Container>
-      {mobile && (
-        <nav>
+      {mobile ? (
+        <MobileNav mobileMenu={mobileMenu} currentPage={currentPage}>
+          <button
+            aria-label="Menu"
+            onClick={() => setMobileMenu(!mobileMenu)}
+          ></button>
+          <ul>
+            <li>
+              <Link href="/portfolio">
+                <a>Portfolio</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/skills">
+                <a>Skills</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/services">
+                <a>Serviços</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sobre">
+                <a>Sobre</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contato">
+                <a>Contato</a>
+              </Link>
+            </li>
+          </ul>
+        </MobileNav>
+      ) : (
+        <nav className="nav">
           <h2>
             <Link href="/">
               <a>Vargattj</a>

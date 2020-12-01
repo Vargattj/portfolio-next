@@ -17,6 +17,10 @@ export const Separator = styled.section`
     width: calc(100% + 1.3px);
     height: 120px;
     transform: rotateX(180deg);
+
+    @media only screen and (max-width: 768px) {
+      height: 0px;
+    }
   }
 
   .custom-shape-divider-bottom-1605195288 .shape-fill {
@@ -30,17 +34,18 @@ export const Container = styled.div`
 
   .content {
     display: flex;
-    padding: 70px 0 140px 0;
+    padding: 20px 0 140px 0;
     justify-content: center;
 
     div {
-      height: 300px;
+      height: 250px;
       color: #fff;
       max-width: 1000px;
       display: flex;
       flex-direction: column;
       text-align: center;
       justify-content: space-evenly;
+      align-items: center;
       p {
         color: #ddd;
         font-size: 36px;
@@ -48,6 +53,33 @@ export const Container = styled.div`
       }
       h1 {
         font-size: 64px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .content {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex: 1;
+      height: 280px;
+      align-items: center;
+      padding: 40px 0;
+      padding-top: 60px;
+      div {
+        justify-content: center;
+        h1 {
+          margin-bottom: 20px;
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .custom-shape-divider-bottom-1605195288 svg {
+      @media only screen and (max-width: 768px) {
+        height: 0px;
       }
     }
   }

@@ -1,3 +1,4 @@
+import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Container, Separator } from "./styles";
 import Button from "../Button";
 import Wrapper from "../Wrapper";
@@ -29,15 +30,21 @@ export function Footer() {
           </div>
           <ul>
             <li>
-              <i></i>
+              <i>
+                <FaEnvelope />
+              </i>
               <a href="">Vargattjh@gmail.com</a>
             </li>
             <li>
-              <i></i>
+              <i>
+                <FaInstagram />
+              </i>
               <a href="">On Instagram</a>
             </li>
             <li>
-              <i></i>
+              <i>
+                <FaLinkedin />
+              </i>
               <a href="">On Linkedin</a>
             </li>
           </ul>
