@@ -2,85 +2,72 @@ import Wrapper from "../components/Wrapper";
 import Nav from "../components/nav";
 import MainBanner from "../components/MainBanner";
 import { FeaturedProject } from "../components/FeaturedProject";
-import { SkillMain } from "../components/SkillMain";
 import { Footer } from "../components/Footer";
-
-import styled from "styled-components";
+import { MainPageServices, MainPageSkills } from "../styles/Home";
 import Button from "../components/Button";
-
-import { Separator } from "../components/Banner/styles";
-
-const Container = styled.section`
-  background-color: ${({ theme }) => theme.colors.third};
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 120px 0;
-  padding: 40px 0;
-  height: 600px;
-
-  & > div {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    h2 {
-      text-align: center;
-      display: flex;
-      line-height: 1.3;
-      font-size: 34px;
-      color: #fff;
-      font-weight: bold;
-    }
-    button {
-      margin-top: 20px;
-      width: 260px;
-    }
-  }
-  img {
-    width: 500px;
-  }
-`;
-
-function MainPageServices() {
-  return (
-    <Container>
-      <Separator />
-
-      <div>
-        <div>
-          <h2>
-            Crio aplicações mobile para Android e IOS, utilizando as mais novas
-            tecnologias do mercado.
-          </h2>
-          <br />
-          <h2>
-            Não está interessado em APP's? Sem problema, conheça outros serviços
-            que eu ofereço!
-          </h2>
-        </div>
-        <Button>Ver mais</Button>
-      </div>
-      <img src="../../images/mobile_phone1.svg" alt="" />
-    </Container>
-  );
-}
+import SectionHeader from "../components/SectionHeader";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <MainBanner>
-        <Wrapper>
-          <Nav />
-        </Wrapper>
+        <Nav />
       </MainBanner>
-      <Wrapper>
-        <FeaturedProject />
-      </Wrapper>
-      <MainPageServices />
-      <SkillMain />
+      <SectionHeader>Projeto recente</SectionHeader>
+      <FeaturedProject />
+      <SectionHeader>Meus Serviços</SectionHeader>
+      <MainPageServices>
+        <div>
+          <div>
+            <h2>
+              Crio aplicações mobile para Android e IOS, utilizando as mais
+              novas tecnologias do mercado.
+            </h2>
+            <br />
+            <h2>
+              Não está interessado em APP's? Sem problema, conheça outros
+              serviços que eu ofereço!
+            </h2>
+          </div>
+          <Link href="/services">
+            <a className="main-page-button">Meus serviços</a>
+          </Link>
+        </div>
+        <img src="../../images/mobile_phone1.svg" alt="" />
+      </MainPageServices>
+      <SectionHeader>Minhas Skills</SectionHeader>
+      <MainPageSkills>
+        <ul>
+          <li>
+            <img src="../../images/react-native-icon.svg" alt="" />
+            <h3>React Native</h3>
+            <p>
+              React Native é uma biblioteca Javascript criada pelo Facebook. É
+              usada para desenvolver aplicativos para os sistemas Android e iOS
+              de forma nativa.
+            </p>
+          </li>
+          <li>
+            <img src="../../images/nodejs-icon.svg" alt="" />
+            <h3>Node JS</h3>
+            <p>
+              Node.js trata-se de um software open-source, cross-platform, e de
+              um runtime de JavaScript que execute código de JavaScript a nível
+              backend e frontend.
+            </p>
+          </li>
+          <li>
+            <img src="../../images/css-icon.svg" alt="" />
+            <h3>CSS</h3>
+            <p>
+              CSS é chamado de linguagem Cascading Style Sheet e é usado para
+              estilizar elementos escritos em uma linguagem de marcação como
+              HTML.
+            </p>
+          </li>
+        </ul>
+      </MainPageSkills>
       <Footer />
     </>
   );

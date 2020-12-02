@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+  max-width: 1150px;
+  margin: 0 auto;
   .menuicon {
     display: block;
     cursor: pointer;
@@ -27,13 +29,7 @@ export const Container = styled.header`
       stroke-dasharray: circumference(23);
     }
   }
-
   .nav {
-    .active {
-      &::after {
-        width: 30px;
-      }
-    }
     height: 100px;
     display: flex;
     align-items: flex-end;
@@ -108,6 +104,11 @@ export const Container = styled.header`
         text-decoration: none;
         color: ${({ theme }) => theme.colors.textSecond};
         font-size: 24px;
+      }
+      .active {
+        &::after {
+          width: 30px;
+        }
       }
     }
     @media only screen and (max-width: 768px) {

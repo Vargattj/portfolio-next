@@ -13,8 +13,6 @@ export function SkillList() {
               páginas na Web.
             </p>
           </li>
-
-          {/* <li></li> */}
           <li>
             <img src="../../images/css-icon.svg" alt="" />
             <h3>CSS</h3>
