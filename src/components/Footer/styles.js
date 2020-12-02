@@ -94,6 +94,7 @@ export const Container = styled.footer`
     & > div {
       padding: 20px 0;
       flex-direction: column;
+
       ul {
         li {
           margin: 0;
@@ -101,6 +102,9 @@ export const Container = styled.footer`
       }
       .contact {
         padding: 10px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        height: auto;
         h2 {
           font-size: 36px;
         }
@@ -108,15 +112,15 @@ export const Container = styled.footer`
           font-size: 20px;
           margin: 20px 0;
         }
-        height: 200px;
         button {
           align-self: center;
           padding: 15px 15px;
+          width: 100%;
         }
       }
       ul {
+        margin: 0;
         text-align: start;
-        margin: 40px 0;
         li {
           margin-bottom: 15px;
         }

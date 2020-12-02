@@ -29,6 +29,11 @@ export const Container = styled.header`
   }
 
   .nav {
+    .active {
+      &::after {
+        width: 30px;
+      }
+    }
     height: 100px;
     display: flex;
     align-items: flex-end;
@@ -64,7 +69,7 @@ export const Container = styled.header`
     ul {
       display: flex;
       list-style: none;
-
+      margin: 0 16px;
       li {
         padding: 10px 0;
         &::after {
@@ -186,14 +191,11 @@ export const MobileNav = styled.nav`
     }
     a {
       letter-spacing: 1px;
-      font-size: 54px;
+      font-size: 36px;
       font-weight: bold;
       text-transform: capitalize;
       text-decoration: none;
-      /* color: ${({ theme }) => theme.colors.second}; */
       color: #eee;
     }
   }
 `;
-
-// 131410

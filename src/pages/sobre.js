@@ -31,6 +31,13 @@ const Article = styled.section`
     height: 1px;
     margin: 60px 0;
   }
+
+  @media only screen and (max-width: 940px) {
+    max-width: 90%;
+    p {
+      text-align: start;
+    }
+  }
 `;
 
 export default function Sobre() {

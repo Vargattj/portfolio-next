@@ -4,14 +4,12 @@ export const Container = styled.div`
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
-  position: relative;
 
-  img {
-    -webkit-box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
-    box-shadow: -1px 2px 9px 1px rgba(0, 0, 0, 0.24);
-    z-index: 10;
-    width: 650px;
+  .slider {
+    max-width: 640px;
+    img {
+      width: 100%;
+    }
   }
 
   .project-details {
@@ -22,7 +20,6 @@ export const Container = styled.div`
     align-items: right;
     max-width: 450px;
     font-family: sans-serif;
-    position: relative;
     h2 {
       font-size: 48px;
       color: ${({ theme }) => theme.colors.greenBlue};
@@ -30,20 +27,21 @@ export const Container = styled.div`
     }
     p {
       font-weight: normal;
-      font-size: 32px;
+      font-size: 26px;
       color: #444;
+      line-height: 1.2;
     }
     li {
+      margin-left: 13px;
+      list-style: circle;
       opacity: 0.7;
-      font-size: 22px;
+      font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
       color: ${({ theme }) => theme.colors.second};
       margin-bottom: 20px;
     }
     button {
-      bottom: -30px;
-      position: absolute;
       width: 280px;
     }
   }

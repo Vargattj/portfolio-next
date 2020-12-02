@@ -8,15 +8,7 @@ export const projects = [
       about:
         "Projeto desenvolvido para um restaurante regional. Além da criação do HTML, CSS e JS, também fui responsável pelo design.",
       images: ["../../images/toph.jpg", "../../images/hulkfome.png"],
-      tecnologies: [
-        "SCSS",
-        "HTML",
-        "JAVASCRIPT",
-        "JQUERY",
-        "JQUERY",
-        "JQUERY",
-        "JQUERY",
-      ],
+      tecnologies: ["SCSS", "HTML", "JAVASCRIPT", "JQUERY"],
     },
   },
   {

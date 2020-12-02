@@ -1,23 +1,31 @@
-import { Container } from "./styles";
 import Button from "../Button";
+import { projects } from "../../projects";
+import AwesomeSlider from "react-awesome-slider";
+import { Container } from "./styles";
 
 export function FeaturedProject() {
+  const filterProject = projects.filter((project) => {
+    return project.query === "fogo-e-lenha";
+  });
+  const project = filterProject[0];
   return (
     <Container>
-      <img
-        src="https://sebkay.com/assets/img/projects/cazz-photography/featured.jpg"
-        alt=""
-      />
+      <AwesomeSlider className="slider">
+        {project.details.images.map((image, key) => {
+          return (
+            <div key={key}>
+              <img src={image} alt="" />
+            </div>
+          );
+        })}
+      </AwesomeSlider>
       <div className="project-details">
-        <h2>Cazz Photography</h2>
-        <p>
-          A simple portfolio showcasing the different aspects of Cazz as a
-          photographer.
-        </p>
+        <h2>{project.name}</h2>
+        <p>{project.details.about}</p>
         <ul>
-          <li>Logo Design</li>
-          <li>Web design</li>
-          <li>Static site development</li>
+          {project.details.tecnologies.map((tecnology) => (
+            <li key={tecnology}>{tecnology}</li>
+          ))}
         </ul>
         <Button>Ver todos os projetos</Button>
       </div>

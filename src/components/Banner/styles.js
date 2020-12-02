@@ -40,7 +40,7 @@ export const Container = styled.div`
     div {
       height: 250px;
       color: #fff;
-      max-width: 1000px;
+      max-width: 974px;
       display: flex;
       flex-direction: column;
       text-align: center;
