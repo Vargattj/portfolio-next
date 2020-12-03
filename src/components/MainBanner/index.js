@@ -1,6 +1,7 @@
 import { Container, Separator } from "./styles";
 import Wrapper from "../Wrapper";
 import Button from "../../components/Button";
+import Link from "next/link";
 
 export default function MainBanner({ children }) {
   return (
@@ -16,7 +17,9 @@ export default function MainBanner({ children }) {
                 por aprender novas tecnologias e dar vida à interfaces e
                 aplicações.
               </p>
-              <Button>Meu Portfolio</Button>
+              <Link href="portfolio">
+                <Button>Meu Portfolio</Button>
+              </Link>
             </div>
             <div className="image-container">
               <img src="../../../images/avatar.jpeg" alt="" />

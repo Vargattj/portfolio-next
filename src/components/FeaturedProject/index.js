@@ -5,6 +5,7 @@ import { Container } from "./styles";
 
 import "react-awesome-slider/dist/styles.css";
 import { MainPageButton } from "../../styles/Home";
+import Link from "next/link";
 
 export function FeaturedProject() {
   const filterProject = projects.filter((project) => {
@@ -30,7 +31,9 @@ export function FeaturedProject() {
             <li key={tecnology}>{tecnology}</li>
           ))}
         </ul>
-        <MainPageButton>Ver todos os projetos</MainPageButton>
+        <Link href="/portfolio">
+          <MainPageButton>Ver todos os projetos</MainPageButton>
+        </Link>
       </div>
     </Container>
   );

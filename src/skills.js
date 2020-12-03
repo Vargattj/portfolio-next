@@ -14,7 +14,7 @@ export const skills = [
   {
     name: "SASS",
     desc:
-      "CSS with superpowers. Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
+      "CSS com superpoderes. Sass é a linguagem de extensão CSS de nível profissional mais madura, estável e poderosa do mundo.",
     img: "../../images/sass-icon.svg",
   },
   {

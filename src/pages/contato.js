@@ -7,7 +7,6 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaWhatsapp,
-  FaUsers,
 } from "react-icons/fa";
 
 import styled from "styled-components";
@@ -30,7 +29,6 @@ const ContactArea = styled.section`
     color: ${({ theme }) => theme.colors.third};
     font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   form {
@@ -95,6 +93,9 @@ const ContactArea = styled.section`
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     }
     li {
+      a {
+        color: inherit;
+      }
       transition: transform 0.35s ease-in-out;
       width: 50px;
       height: 50px;
@@ -174,12 +175,16 @@ export default function Contato() {
             <h2></h2>
             <li className="linkedin">
               <i>
-                <FaLinkedin />
+                <a href="http://www.linkedin.com/in/jonatas-vargatt">
+                  <FaLinkedin />
+                </a>
               </i>
             </li>
             <li className="instagram">
               <i>
-                <FaInstagram />
+                <a href="https://www.instagram.com/vargattj/">
+                  <FaInstagram />
+                </a>
               </i>
             </li>
             <li className="whatsapp">

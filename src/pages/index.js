@@ -16,6 +16,7 @@ export default function Home() {
       <MainBanner>
         <Nav />
       </MainBanner>
+
       <SectionHeader>Projeto recente</SectionHeader>
       <FeaturedProject />
       <SectionHeader>Meus Serviços</SectionHeader>
@@ -32,7 +33,7 @@ export default function Home() {
               serviços que eu ofereço!
             </h2>
           </div>
-          <Link href="/services">
+          <Link href="/servicos">
             <MainPageButton>Ver mais serviços</MainPageButton>
           </Link>
         </div>
@@ -69,7 +70,9 @@ export default function Home() {
             </p>
           </li>
         </ul>
-        <MainPageButton>Ver todas as Skills</MainPageButton>
+        <Link href="/skills">
+          <MainPageButton>Ver todas as Skills</MainPageButton>
+        </Link>
       </MainPageSkills>
       <Footer />
     </>

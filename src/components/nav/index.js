@@ -55,7 +55,7 @@ export default function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/services">
+              <Link href="/servicos">
                 <a>Serviços</a>
               </Link>
             </li>
@@ -90,7 +90,7 @@ export default function Nav() {
               </Link>
             </li>
             <li className={router.pathname === "/services" ? "active" : ""}>
-              <Link href="/services">
+              <Link href="/servicos">
                 <a>Serviços</a>
               </Link>
             </li>

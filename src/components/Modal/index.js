@@ -56,7 +56,9 @@ export default function Modal({ showModal, setShowModal }) {
                 <ModalContent>
                   <header>
                     <h1>{filterProjects[0].name}</h1>
-                    <MainPageButton>Acessar site</MainPageButton>
+                    <MainPageButton href={filterProjects[0].link}>
+                      Acessar site
+                    </MainPageButton>
                   </header>
                   <AwesomeSlider className="slider">
                     {filterProjects[0].details.images.map((image) => {
@@ -82,6 +84,8 @@ export default function Modal({ showModal, setShowModal }) {
                         }
                       )}
                     </ul>
+                    <h2>Código fonte</h2>
+                    <a href={filterProjects[0].code}>Acessar no Github</a>
                   </div>
                 </ModalContent>
               )}

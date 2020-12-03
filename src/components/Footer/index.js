@@ -1,7 +1,8 @@
-import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaEnvelope, FaGit } from "react-icons/fa";
 import { Container, Separator } from "./styles";
 import Button from "../Button";
 import Wrapper from "../Wrapper";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -26,26 +27,40 @@ export function Footer() {
           <div className="contact">
             <h2>Vamos trabalhar juntos!</h2>
             <p>Gostaria de conversar sobre algum projeto?</p>
-            <Button>Entrar em contato</Button>
+            <Link href="/contato">
+              <a>
+                <Button>Entrar em contato</Button>
+              </a>
+            </Link>
           </div>
           <ul>
             <li>
               <i>
                 <FaEnvelope />
               </i>
-              <a href="">Vargattjh@gmail.com</a>
+              <Link href="/contato">
+                <a>Vargattjh@gmail.com</a>
+              </Link>
             </li>
             <li>
               <i>
                 <FaInstagram />
               </i>
-              <a href="">On Instagram</a>
+              <a href="https://www.instagram.com/vargattj/">On Instagram</a>
             </li>
             <li>
               <i>
                 <FaLinkedin />
               </i>
-              <a href="">On Linkedin</a>
+              <a href="http://www.linkedin.com/in/jonatas-vargatt">
+                On Linkedin
+              </a>
+            </li>
+            <li>
+              <i>
+                <FaGit />
+              </i>
+              <a href="https://github.com/vargattj">On Github</a>
             </li>
           </ul>
         </Wrapper>

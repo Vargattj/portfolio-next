@@ -58,12 +58,25 @@ export const ModalContent = styled.div`
     margin: 36px 0;
     div {
       height: 100%;
-      width: 100%;
       img {
         width: 100%;
         height: 100%;
       }
+      span {
+        &::before {
+          background-color: ${({ theme }) => theme.colors.second} !important;
+        }
+        &::after {
+          background-color: ${({ theme }) => theme.colors.second} !important;
+        }
+      }
     }
+  }
+  .awssld__bullets .awssld__bullets--active {
+    background: ${({ theme }) => theme.colors.second} !important;
+  }
+  .awssld__bullets button {
+    background: ${({ theme }) => theme.colors.second} !important;
   }
 
   .description {
@@ -103,6 +116,19 @@ export const ModalContent = styled.div`
       text-align: left;
       margin: 5px 0;
       margin-left: 20px;
+    }
+    a {
+      border: 0;
+      background-color: ${({ theme }) => theme.colors.third};
+      padding: 10px 15px;
+      border-radius: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transform: translateY(0px);
+      color: #ddd;
+      text-decoration: none;
+      width: fit-content;
+      margin-bottom: 20px;
     }
   }
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "./styles";
 
 export default function ServiceItem() {
@@ -12,7 +13,9 @@ export default function ServiceItem() {
             performáticos e responsivos, além de garantir que sejam simples e
             práticos para seu público.
           </p>
-          <a href="">Entrar em contato</a>
+          <Link href="/contato">
+            <a>Entrar em contato</a>
+          </Link>
         </div>
         <img src="../../images/web-dev.svg" alt="" />
       </article>
@@ -24,7 +27,9 @@ export default function ServiceItem() {
             Utilizando React Native construo aplicações nativas para IOS e
             Android.
           </p>
-          <a href="">Entrar em contato</a>
+          <Link href="/contato">
+            <a>Entrar em contato</a>
+          </Link>
         </div>
         <img src="../../images/mobile-dev.svg" alt="" />
       </article>
@@ -36,7 +41,9 @@ export default function ServiceItem() {
             SEO é um conjunto de técnicas que visa posicionar uma página nos
             primeiros resultados de mecanismos de busca online, como o Google.
           </p>
-          <a href="">Entrar em contato</a>
+          <Link href="/contato">
+            <a>Entrar em contato</a>
+          </Link>
         </div>
         <img src="../../images/seo.svg" alt="" />
       </article>

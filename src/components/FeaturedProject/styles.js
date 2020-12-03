@@ -15,6 +15,20 @@ export const Container = styled.section`
         height: 100%;
       }
     }
+    span {
+      &::before {
+        background-color: ${({ theme }) => theme.colors.second} !important;
+      }
+      &::after {
+        background-color: ${({ theme }) => theme.colors.second} !important;
+      }
+    }
+  }
+  .awssld__bullets .awssld__bullets--active {
+    background: ${({ theme }) => theme.colors.second} !important;
+  }
+  .awssld__bullets button {
+    background: ${({ theme }) => theme.colors.second} !important;
   }
 
   .project-details {
@@ -40,12 +54,12 @@ export const Container = styled.section`
     li {
       margin-left: 13px;
       list-style: circle;
-      opacity: 0.7;
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
       color: ${({ theme }) => theme.colors.second};
       margin-bottom: 20px;
+      color: #777;
     }
     button {
       width: 280px;
