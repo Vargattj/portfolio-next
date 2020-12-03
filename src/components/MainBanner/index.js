@@ -18,7 +18,9 @@ export default function MainBanner({ children }) {
                 aplicações.
               </p>
               <Link href="portfolio">
-                <Button>Meu Portfolio</Button>
+                <a>
+                  <Button>Meu Portfolio</Button>
+                </a>
               </Link>
             </div>
             <div className="image-container">

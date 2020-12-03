@@ -82,7 +82,7 @@ export const MainPageSkills = styled.section`
         height: 190px;
         padding: 16px;
       }
-
+      flex: 1;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;

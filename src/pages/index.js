@@ -61,12 +61,13 @@ export default function Home() {
             </p>
           </li>
           <li>
-            <img src="../../images/css-icon.svg" alt="" />
-            <h3>CSS</h3>
+            <img src="../../images/next-js-icon.svg" alt="" />
+            <h3>Next JS</h3>
             <p>
-              CSS é chamado de linguagem Cascading Style Sheet e é usado para
-              estilizar elementos escritos em uma linguagem de marcação como
-              HTML.
+              Next.js é uma estrutura da web de desenvolvimento front-end React
+              que permite funcionalidades como renderização do lado do servidor
+              e geração de sites estáticos para aplicativos da web baseados em
+              React.
             </p>
           </li>
         </ul>
