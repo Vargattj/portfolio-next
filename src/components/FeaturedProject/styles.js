@@ -1,22 +1,25 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   max-width: 1150px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
   .slider {
     max-width: 670px;
-    /* height: 500px; */
-    img {
+    div {
+      height: 470px;
       width: 100%;
-      height: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
   .project-details {
     height: 500px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -52,6 +55,12 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     max-width: 90%;
     flex-direction: column;
+    .slider {
+      div {
+        height: 100%;
+      }
+    }
+
     .project-details {
       height: 400px;
       width: 100%;

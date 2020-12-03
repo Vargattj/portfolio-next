@@ -87,6 +87,8 @@ export const Container = styled.div`
         min-height: 310px;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 0px;
+
         p {
           line-height: 1.2;
           font-size: 20px;

@@ -11,6 +11,7 @@ import {
   ModalWrapper,
 } from "./style";
 import { projects } from "../../projects";
+import { MainPageButton } from "../../styles/Home";
 
 export default function Modal({ showModal, setShowModal }) {
   const modalRef = useRef();
@@ -53,7 +54,10 @@ export default function Modal({ showModal, setShowModal }) {
             <ModalWrapper showModal={showModal}>
               {filterProjects[0] && (
                 <ModalContent>
-                  <h1>{filterProjects[0].name}</h1>
+                  <header>
+                    <h1>{filterProjects[0].name}</h1>
+                    <MainPageButton>Acessar site</MainPageButton>
+                  </header>
                   <AwesomeSlider className="slider">
                     {filterProjects[0].details.images.map((image) => {
                       return (

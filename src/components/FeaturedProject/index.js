@@ -13,7 +13,7 @@ export function FeaturedProject() {
   const project = filterProject[0];
   return (
     <Container>
-      <AwesomeSlider className="slider" lodaerBar={true}>
+      <AwesomeSlider className="slider">
         {project.details.images.map((image, key) => {
           return (
             <div key={key}>

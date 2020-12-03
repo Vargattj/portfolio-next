@@ -36,22 +36,33 @@ export const ModalWrapper = styled.div`
 
 export const ModalContent = styled.div`
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  h1 {
-    margin: 16px 0;
-    color: #ddd;
-    font-size: 36px;
-    margin-top: 16px;
-    font-weight: bold;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      margin: 16px 0;
+      color: #ddd;
+      font-size: 36px;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+    a {
+    }
   }
+
   .slider {
-    margin-bottom: 36px;
-  }
-  div {
-    width: 100%;
-    img {
+    margin: 36px 0;
+    div {
+      height: 100%;
       width: 100%;
-      height: 490px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -100,7 +111,9 @@ export const ModalContent = styled.div`
     padding: 10px;
     overflow: hidden;
     overflow-y: scroll;
-
+    header {
+      flex-direction: column;
+    }
     .description {
       max-width: 300px;
     }
