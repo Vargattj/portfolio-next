@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { Container } from "./styles";
-
 import { projects } from "../../projects";
+
 export default function ProjectList({ setShowModal }) {
   const router = useRouter();
 
@@ -35,7 +35,7 @@ export default function ProjectList({ setShowModal }) {
                   <i></i>
                   <h2>{project.name}</h2>
                 </div>
-                <img src={project.image} alt="" />
+                <img src={project.details.images[0]} alt="" />
                 <div class="descriptions">
                   <ul>
                     {project.details.tecnologies.map((tecnology, key) => (

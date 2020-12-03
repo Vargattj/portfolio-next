@@ -20,7 +20,7 @@ export const ModalWrapper = styled.div`
   width: 1050px;
   height: 550px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #16213e;
+  background: ${({ theme }) => theme.colors.greenBlue};
   color: #000;
   position: relative;
   z-index: 10;
@@ -51,6 +51,7 @@ export const ModalContent = styled.div`
     width: 100%;
     img {
       width: 100%;
+      height: 490px;
     }
   }
 

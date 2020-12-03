@@ -1,10 +1,12 @@
-import Wrapper from "../components/Wrapper";
 import Nav from "../components/nav";
 import MainBanner from "../components/MainBanner";
 import { FeaturedProject } from "../components/FeaturedProject";
 import { Footer } from "../components/Footer";
-import { MainPageServices, MainPageSkills } from "../styles/Home";
-import Button from "../components/Button";
+import {
+  MainPageButton,
+  MainPageServices,
+  MainPageSkills,
+} from "../styles/Home";
 import SectionHeader from "../components/SectionHeader";
 import Link from "next/link";
 
@@ -31,7 +33,7 @@ export default function Home() {
             </h2>
           </div>
           <Link href="/services">
-            <a className="main-page-button">Meus serviços</a>
+            <MainPageButton>Ver mais serviços</MainPageButton>
           </Link>
         </div>
         <img src="../../images/mobile_phone1.svg" alt="" />
@@ -67,6 +69,7 @@ export default function Home() {
             </p>
           </li>
         </ul>
+        <MainPageButton>Ver todas as Skills</MainPageButton>
       </MainPageSkills>
       <Footer />
     </>

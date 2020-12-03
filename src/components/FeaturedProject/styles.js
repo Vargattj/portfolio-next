@@ -7,9 +7,11 @@ export const Container = styled.div`
   justify-content: space-between;
 
   .slider {
-    max-width: 640px;
+    max-width: 670px;
+    /* height: 500px; */
     img {
       width: 100%;
+      height: 500px;
     }
   }
 
@@ -44,6 +46,35 @@ export const Container = styled.div`
     }
     button {
       width: 280px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 90%;
+    flex-direction: column;
+    .project-details {
+      height: 400px;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+      h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+      p {
+        font-size: 25px;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+          margin: 12px;
+        }
+      }
     }
   }
 `;

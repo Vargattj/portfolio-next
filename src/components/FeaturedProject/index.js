@@ -1,11 +1,10 @@
 import React from "react";
-import Button from "../Button";
 import { projects } from "../../projects";
 import AwesomeSlider from "react-awesome-slider";
 import { Container } from "./styles";
-import { SectionHeader } from "../../pages/index";
 
 import "react-awesome-slider/dist/styles.css";
+import { MainPageButton } from "../../styles/Home";
 
 export function FeaturedProject() {
   const filterProject = projects.filter((project) => {
@@ -31,7 +30,7 @@ export function FeaturedProject() {
             <li key={tecnology}>{tecnology}</li>
           ))}
         </ul>
-        <Button>Ver todos os projetos</Button>
+        <MainPageButton>Ver todos os projetos</MainPageButton>
       </div>
     </Container>
   );

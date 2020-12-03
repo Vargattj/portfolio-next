@@ -34,8 +34,13 @@ const Article = styled.section`
 
   @media only screen and (max-width: 940px) {
     max-width: 90%;
+
+    h2 {
+      font-size: 36px;
+    }
     p {
       text-align: start;
+      font-size: 18px;
     }
   }
 `;
@@ -61,9 +66,8 @@ export default function Sobre() {
         </p>
         <br />
         <p>
-          Como comecei a programar Minha primeira experiência com programação
-          foi aos 14 anos, mas entrei de cabeça nesse mundo três anos depois,
-          quando tive o primeiro contato com desenvolvimento Web.
+          Um profissional resiliente, pró-ativo e adaptável, com paixão por
+          aprender novas tecnologias e dar vida à interfaces e aplicações.
         </p>
         <hr />
         <h2>Como comecei a programar</h2>

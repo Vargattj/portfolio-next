@@ -38,6 +38,13 @@ export default function Nav() {
           ></button>
           <ul>
             <li>
+              <Link href="/">
+                <a>
+                  <h2>Vargattj</h2>
+                </a>
+              </Link>
+            </li>
+            <li>
               <Link href="/portfolio">
                 <a>Portfolio</a>
               </Link>

@@ -12,13 +12,14 @@ export default function MainBanner({ children }) {
             <div>
               <h1>Olá, Sou o Jônatas!</h1>
               <p>
-                A web designer and developer from Southampton in the UK. I
-                create bespoke websites to help people go further online.
+                Um profissional resiliente, pró-ativo e adaptável, com paixão
+                por aprender novas tecnologias e dar vida à interfaces e
+                aplicações.
               </p>
               <Button>Meu Portfolio</Button>
             </div>
             <div className="image-container">
-              <img src="../../../images/perfil.jpg" alt="" />
+              <img src="../../../images/avatar.jpeg" alt="" />
             </div>
           </div>
         </Wrapper>

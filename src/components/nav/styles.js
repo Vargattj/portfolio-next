@@ -198,5 +198,13 @@ export const MobileNav = styled.nav`
       text-decoration: none;
       color: #eee;
     }
+    h2 {
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+    }
   }
 `;

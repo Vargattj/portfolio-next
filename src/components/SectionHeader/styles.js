@@ -6,11 +6,14 @@ export const Container = styled.div`
   h2 {
     width: fit-content;
     font-size: 24px;
-    /* color: ${({ theme }) => theme.colors.greenBlue}; */
     color: #aaa;
     text-transform: uppercase;
     padding-bottom: 5px;
     border-bottom: 1px solid #aaa;
     font-weight: bold;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    margin-top: 60px;
   }
 `;

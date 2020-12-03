@@ -115,6 +115,23 @@ const ContactArea = styled.section`
     }
   }
   @media only screen and (max-width: 940px) {
+    width: 90%;
+    flex-direction: column;
+    form {
+      width: 100%;
+      button {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+    div {
+      margin-bottom: 60px;
+
+      align-self: center;
+      img {
+        width: 300px;
+      }
+    }
   }
 `;
 
